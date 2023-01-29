@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Debian based
-apt install vim
+apt install npm vim
