@@ -5,4 +5,5 @@ cp ../.gitconfig ~
 cp ../.vimrc ~
 
 # Debian based
-yes Y | apt install npm vim
+yes Y | apt install vim
+apt install gnome-tweaks npm
