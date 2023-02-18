@@ -1,2 +1,2 @@
 # setup-config
-Dev setup in new environments
+Dev setup for new environments
