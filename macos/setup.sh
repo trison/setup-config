@@ -9,6 +9,7 @@ cp ../.vimrc ~
 brew update
 brew instal node
 brew install rar
+brew install blackhole-2ch
 
 # XCode command line tools
 xcode-select --install
