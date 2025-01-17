@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/env bash
 
 # Copy config files
 cp ../.gitconfig ~
