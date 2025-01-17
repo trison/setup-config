@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Create vim .swp file locations
+mkdir -p ~/.vim/{backup_files,swap_files,undo_files}
+
 # Copy config files
 cp ../.gitconfig ~
 cp ../.vimrc ~
