@@ -10,6 +10,7 @@ brew update
 brew instal node
 brew install rar
 brew install blackhole-2ch
+brew install --cask visual-studio-code
 
 # XCode command line tools
 xcode-select --install
