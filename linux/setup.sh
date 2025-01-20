@@ -11,6 +11,14 @@ cp ../.vimrc ~
 yes Y | apt install vim
 apt install gnome-tweaks npm
 
+# Node version manager (in order to install latest node)
+wget https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh
+chmod u+x install.sh
+./install.sh
+source ~/.bashrc
+rm install.sh
+nvm install "lts/*" --reinstall-packages-from="$(nvm current)"
+
 # Install Neovim
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod u+x nvim.appimage
