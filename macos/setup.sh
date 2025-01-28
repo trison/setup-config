@@ -20,5 +20,7 @@ brew install ripgrep
 # Neovim config from my fork
 git clone https://github.com/trison/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 
+npm install -g nodemon
+
 # XCode command line tools
 xcode-select --install
