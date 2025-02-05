@@ -8,8 +8,9 @@ cp ../.gitconfig ~
 cp ../.vimrc ~
 
 # Debian based
-yes Y | apt install vim
-apt install gnome-tweaks npm
+yes Y | sudo apt install vim
+yes Y | sudo apt install gnome-tweaks npm
+yes Y | sudo apt install gparted
 
 # Node version manager (in order to install latest node)
 wget https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh
