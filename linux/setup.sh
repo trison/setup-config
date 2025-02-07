@@ -21,10 +21,10 @@ rm install.sh
 nvm install "lts/*" --reinstall-packages-from="$(nvm current)"
 
 # Install Neovim
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
-chmod u+x nvim.appimage
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.appimage
+chmod u+x nvim-linux-x86_64.appimage
 mkdir -p ~/bin
-mv nvim.appimage ~/bin/nvim
+mv nvim-linux-x86_64.appimage ~/bin/nvim
 echo "alias nvim=~/bin/nvim" >> ~/.bashrc
 source ~/.bashrc
 
