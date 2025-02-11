@@ -7,10 +7,11 @@ mkdir -p ~/.vim/{backup_files,swap_files,undo_files}
 cp ../.gitconfig ~
 cp ../.vimrc ~
 
-# Debian based
-yes Y | sudo apt install vim
-yes Y | sudo apt install gnome-tweaks npm
-yes Y | sudo apt install gparted
+if [ -f "/etc/debian_version" ]; then
+	yes Y | sudo apt install vim
+	yes Y | sudo apt install gnome-tweaks npm
+	yes Y | sudo apt install gparted
+fi
 
 # Node version manager (in order to install latest node)
 wget https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh
