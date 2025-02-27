@@ -11,6 +11,7 @@ if [ -f "/etc/debian_version" ]; then
 	yes Y | sudo apt install vim
 	yes Y | sudo apt install gnome-tweaks npm
 	yes Y | sudo apt install gparted
+	yes Y | sudo apt install vlc
 fi
 
 # Node version manager (in order to install latest node)
