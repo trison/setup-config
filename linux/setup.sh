@@ -1,5 +1,11 @@
 #!/bin/env bash
 
+using_gnome=1
+
+if [[ "$DESKTOP_SESSION" == "gnome" ]]; then
+   using_gnome=0
+fi
+
 # Create vim .swp file locations
 mkdir -p ~/.vim/{backup_files,swap_files,undo_files}
 
@@ -8,8 +14,11 @@ cp ../.gitconfig ~
 cp ../.vimrc ~
 
 if [ -f "/etc/debian_version" ]; then
+	if [[ $is_gnome -eq 0 ]]; then
+		yes Y | sudo apt install gnome-tweaks
+	fi
+	yes Y | sudo apt install npm
 	yes Y | sudo apt install vim
-	yes Y | sudo apt install gnome-tweaks npm
 	yes Y | sudo apt install gparted
 	yes Y | sudo apt install vlc
 fi
